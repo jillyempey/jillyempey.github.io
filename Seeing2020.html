@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>MeetMe Personal</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li> 
+								<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> 
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Seeing 20/20</h2>
+							<div class="page_link">
+								<a href="index.html">Home</a>
+								<a href="portfolio.html">Portfolio</a>
+								<a href="Seeing2020.html">Seeing 20/20</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Blog Area =================-->
+        <section class="blog_area single-post-area p_120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 posts-list">
+                        <div class="single-post row">
+                            <div class="col-lg-12">
+                                <div class="feature-img">
+                                    <img class="img-fluid" src="img/Seeing2020/Seeing2020.png" alt="">
+                                </div>									
+                            </div>
+                            <div class="col-lg-3  col-md-3">
+                                
+                                <div class="blog_info text-right">
+                                    <div class="post_tag">
+                                        <a href="#">C++,</a>
+                                        <a href="#">OpenGL,</a>
+                                        <a href="#">Maya,</a>
+                                        <a href="#">Assimp,</a>
+                                        <a href="#">irrKlang,</a>
+                                        <a href="#">Freetype,</a>
+                                    </div>
+                                    <ul class="blog_meta list">
+                                        <li><a href="#">Jillian Empey<i class="lnr lnr-user"></i></a></li>
+                                        <li><a href="#">Spring, 2020<i class="lnr lnr-calendar-full"></i></a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 blog_details">
+                                <h2>Seeing 20/20: Real-Time 3D Graphics Project</h2>
+                                <p class="excert">
+                                    As part of Cal Poly's Real-Time 3D Graphics course, I developed the idea of a game where the user is slowly going blind and must collect shards of their glasses in order to see clearly from that part of the screen. Before the user goes completely blind, they must accomplish certain tasks while a toddler and dog are trying to get in your way. I pitched this idea to my class at the beginning of the quarter, and had a very positive response with regards to the number of people wanting to be a part of this team. I led a team of 5 and together we refined the game and developed the idea into a fully functioning real-time 3D game in OpenGL.
+                                </p>
+                                <p class="excert">
+                                    My duties as team manager included running meetings to discuss goals for each sprint and to keep myself and my team on schedule. I was also in charge of demoing each iteration of our game to the entire class in order to receive feedback.
+                                </p>
+                                
+                                <p class="excert">
+                                    Our game integrated several graphics libraries such as Freetype (text on screen), irrKlang (sound), and Assimp (loading textured and rigged meshes). We also developed our own technologies, and implemented shadow mapping, view frustum culling, blur/blur compositing, animations, and simple pathing. One of the technologies I focused on most was the blur effect. I accomlished this by rendering the scene to a texture, and then rendering the glass fragments to another texture as pure green. Using another shader, I blurred the scene texture to a third texture, so that now I had access to a full render of the scene, a blurred render to the scene, and essentially a map to use for compositing. In yet another shader, I took in all three textures and, using the glasses texture as a map, rendered out to the screen from the normal texture if the pixel was green, and from the blurred texture if it wasn't. Below is an example of the three input textures.
+                                </p>
+                                
+                                <img class="img-fluid" src="img/Seeing2020/clear_after.png" alt="">
+                                <br>
+                                </br>
+                                <h6>Normal Texture</h6>
+                                <img class="img-fluid" src="img/Seeing2020/blur_after.png" alt="">
+                                <br>
+                                </br>
+                                <h6>Blurred Texture</h6>
+                                <img class="img-fluid" src="img/Seeing2020/glasses_before.png" alt="">
+                                <br>
+                                </br>
+                                <h6>Green Screen Texture</h6>
+                                <br>
+                                </br>
+                                
+                                <p class="excert">
+                                    Another part of the game I worked on was building the house model. I used Maya to build the layout and add textures to the house, and as a fun little easter egg I added windows with real photos of gardens and photos on the walls of me and my teammates as well as our teacher and teaching assistants.
+                                </p>
+                                
+                                <img class="img-fluid" src="img/Seeing2020/houseview.jpg" alt="">
+                                <br>
+                                </br>
+                                <h6>The House</h6>
+                                <img class="img-fluid" src="img/Seeing2020/topview.jpg" alt="">
+                                <br>
+                                </br>
+                                <h6>Top View</h6>
+                                <img class="img-fluid" src="img/Seeing2020/pictureframe.png" alt="">
+                                <br>
+                                </br>
+                                <h6>Example of Picture Frame</h6>
+                                <br>
+                                </br>                                
+                                
+                            </div>
+                            
+                            </div> 
+                        </div>
+                       
+                     <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            
+                            <aside class="single_sidebar_widget author_widget">
+                                <img class="author_img rounded-circle" src="img/personal.jpg" alt="" style="width:100px;">
+                                <h4>Jillian Empey</h4>
+                                <p></p>
+                                Seeking junior software developer roles in the computer graphics industry.
+                                <div class="br"></div>
+                            </aside> 
+                            
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!--================Blog Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3></h3>
+        					</div>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
